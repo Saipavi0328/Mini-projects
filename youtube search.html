@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube form</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+</head>
+
+
+<style>
+    body{
+        text-align: center;
+        padding: 0px;
+        margin: 50px;
+    }
+    label{
+        font-size: 25px;
+        font-family: "Roboto";
+        color: red;
+        
+    }
+    input{
+        border: 2px solid rgb(49, 44, 44);
+        width: 200px;
+        height: 20px;
+    }
+    button{
+        margin: 5px;
+    }
+    button:hover{
+        background-color: rgb(31, 28, 28);
+        color: whitesmoke;
+    }
+    
+</style>
+
+
+<body>
+
+    <form action="https://www.youtube.com/results" method="get" target="_blank">
+        <label id="youtube">
+            <i class="fa-brands fa-youtube" style="color: #f50511;"></i> Youtube Search
+        </label>
+        <input type="text" placeholder="search something" name="search_query" >
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
