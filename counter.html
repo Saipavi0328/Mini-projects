@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+   
+
+    <style>
+
+    .bg-container{
+        height: 100vh;
+        background-color: #f1f5f8;
+    }
+    .counter-heading{
+        font-size: 50px;
+        font-family: "roboto";
+        font-weight: 800;
+    }
+    .counter-value{
+        font-size: 75px;
+        font-weight: 900;
+    }
+    .button{
+        margin: 8px;
+        padding: 5px;
+        border-radius: 7px;
+        border-width: 2px;
+        background-color: white;
+        border-color: black;
+    }
+
+    </style>
+
+</head>
+<body>
+    <div class="bg-container text-center d-flex flex-column justify-content-center">
+        <h1 class="counter-heading">Counter</h1>
+        <p id="counterValue" class="counter-value">0</p>
+        <div>
+            <button class="button" onclick="onDecrement()">DECREASE</button>
+            <button class="button" onclick="onReset()">RESET</button>
+            <button class="button" onclick="onIncrement()">INCREASE</button>
+        </div>
+    </div> 
+    <script src="counter.js"></script> 
+</body>
+</html>
